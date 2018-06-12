@@ -35,3 +35,4 @@ class CreateMicropostsTable extends Migration
         Schema::dropIfExists('microposts');
     }
 }
+
