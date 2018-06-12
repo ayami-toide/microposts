@@ -18,7 +18,7 @@ class UsersController extends Controller
     }
 
 
- public function show($id)
+    public function show($id)
     {
         $user = User::find($id);
         $microposts = $user->microposts()->orderBy('created_at', 'desc')->paginate(10);
